@@ -34,6 +34,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin.auth']], function () 
 
     // Leads routes
     Route::get('/leads', [AdminController::class, 'leads'])->name('admin.leads');
+    Route::put('/leads/{id}/status', [AdminController::class, 'updateLeadStatus'])->name('admin.leads.status');
 
     // Logout route
     Route::post('/logout', [AdminController::class, 'logout'])->name('admin.logout');

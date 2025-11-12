@@ -152,6 +152,7 @@ class AdminController extends Controller
         $query = Lead::query();
         $totalLeads = Lead::count();
         
+        // Search filter
         if ($request->has('search') && $request->search != '') {
             $search = $request->search;
             $query->where(function($q) use ($search) {
@@ -161,21 +162,31 @@ class AdminController extends Controller
                   ->orWhere('position', 'LIKE', "%{$search}%")
                   ->orWhere('whatsapp_number', 'LIKE', "%{$search}%");
             });
-            
-            // Count for search results
-            $searchCountQuery = Lead::query();
-            $searchCountQuery->where(function($q) use ($search) {
-                $q->where('name', 'LIKE', "%{$search}%")
-                  ->orWhere('pesantren_name', 'LIKE', "%{$search}%")
-                  ->orWhere('email', 'LIKE', "%{$search}%")
-                  ->orWhere('position', 'LIKE', "%{$search}%")
-                  ->orWhere('whatsapp_number', 'LIKE', "%{$search}%");
-            });
-            $totalLeads = $searchCountQuery->count();
         }
+        
+        // Status filter
+        if ($request->has('status') && $request->status != '') {
+            $query->where('status', $request->status);
+        }
+        
+        // Count for results after filters
+        $totalLeads = $query->count();
         
         $leads = $query->orderBy('created_at', 'desc')->get();
         
         return view('admin.leads', compact('leads', 'totalLeads'));
+    }
+    
+    public function updateLeadStatus(Request $request, $id)
+    {
+        $request->validate([
+            'status' => 'required|in:' . implode(',', Lead::STATUSES)
+        ]);
+        
+        $lead = Lead::findOrFail($id);
+        $lead->status = $request->status;
+        $lead->save();
+        
+        return response()->json(['success' => true, 'message' => 'Status berhasil diperbarui']);
     }
 }
