@@ -52,6 +52,7 @@ Tentu. Ini adalah _tech spec_ versi lengkap dan mendetail, menggabungkan semua e
       $table->string('position'); // Jabatan (Bendahara, Pimpinan, etc.)
       $table->string('whatsapp_number');
       $table->string('email')->nullable();
+      $table->string('status')->default('pending'); // Added for lead management
       $table->timestamps();
   });
   ```
@@ -130,6 +131,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin.auth']], function () 
     Route::get('/profile', [AdminController::class, 'profile'])->name('admin.profile');
     Route::put('/profile/update-credentials', [AdminController::class, 'updateCredentials'])->name('admin.update.credentials');
     
+    // Leads routes
+    Route::get('/leads', [AdminController::class, 'leads'])->name('admin.leads');
+    Route::put('/leads/{id}/status', [AdminController::class, 'updateLeadStatus'])->name('admin.leads.status');
+
     // Logout route
     Route::post('/logout', [AdminController::class, 'logout'])->name('admin.logout');
 });
@@ -156,7 +161,7 @@ class LandingPageController extends Controller
         $contactEmail = \App\Models\Setting::getValue('contact_email', '');
         $whatsappNumber = \App\Models\Setting::getValue('whatsapp_number', '');
         $officeHours = \App\Models\Setting::getValue('office_hours', '');
-        
+
         return view('landing.index', compact('testimonials', 'contactNumber', 'contactEmail', 'whatsappNumber', 'officeHours'));
     }
 
@@ -193,6 +198,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Testimonial;
+use App\Models\Lead;
 use App\Models\Admin;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -232,6 +238,49 @@ class AdminController extends Controller
     public function dashboard()
     {
         return view('admin.dashboard');
+    }
+    
+    public function leads(Request $request)
+    {
+        $query = Lead::query();
+        $totalLeads = Lead::count();
+        
+        // Search filter
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('name', 'LIKE', "%{$search}%")
+                  ->orWhere('pesantren_name', 'LIKE', "%{$search}%")
+                  ->orWhere('email', 'LIKE', "%{$search}%")
+                  ->orWhere('position', 'LIKE', "%{$search}%")
+                  ->orWhere('whatsapp_number', 'LIKE', "%{$search}%");
+            });
+        }
+        
+        // Status filter
+        if ($request->has('status') && $request->status != '') {
+            $query->where('status', $request->status);
+        }
+        
+        // Count for results after filters
+        $totalLeads = $query->count();
+        
+        $leads = $query->orderBy('created_at', 'desc')->get();
+        
+        return view('admin.leads', compact('leads', 'totalLeads'));
+    }
+    
+    public function updateLeadStatus(Request $request, $id)
+    {
+        $request->validate([
+            'status' => 'required|in:' . implode(',', Lead::STATUSES)
+        ]);
+        
+        $lead = Lead::findOrFail($id);
+        $lead->status = $request->status;
+        $lead->save();
+        
+        return response()->json(['success' => true, 'message' => 'Status berhasil diperbarui']);
     }
 
     public function testimonials()
@@ -302,7 +351,7 @@ class AdminController extends Controller
     {
         $adminId = session('admin_id');
         $admin = Admin::findOrFail($adminId);
-        
+
         return view('admin.profile', compact('admin'));
     }
 
@@ -342,6 +391,7 @@ class AdminController extends Controller
 #### 5.1. File & Aset Utama
 
 - **`resources/views/layouts/app.blade.php`:** Layout utama.
+- **`resources/views/layouts/admin.blade.php`:** Layout admin yang baru.
 - **`resources/views/landing/index.blade.php`:** View utama (berisi semua bagian).
 - **`resources/views/admin/`:** View untuk admin panel.
 - **`resources/css/app.css`:** Impor TailwindCSS.
@@ -571,6 +621,21 @@ class AdminController extends Controller
   - Manajemen data testimonial (tambah, hapus)
   - Pengaturan informasi kontak (nomor telepon, email, jam operasional)
   - Perubahan kredensial admin (username dan password)
+  
+**Bagian 10: Lead Management System**
+
+- **Fungsi:** Sistem manajemen lead untuk melacak permintaan demo dari pengguna
+- **Fitur:**
+  - Empat status lead: `pending`, `process`, `approved`, `rejected`
+  - Tampilan visual dengan badge warna untuk setiap status
+  - Update status secara real-time tanpa refresh halaman
+  - Filter berdasarkan status dan pencarian teks
+  - Tampilan profesional dengan sidebar navigasi
+  - Dashboard informatif dengan distribusi status leads dan grafik
+  - Tombol "Kembali ke Dashboard" untuk navigasi yang mudah
+  - Migrasi database untuk menambah kolom status ke tabel leads
+  - Validasi status server-side untuk keamanan
+  - Fungsi pencarian dan filter untuk manajemen yang lebih efisien
 
 ### 6\. Kinerja & SEO
 
