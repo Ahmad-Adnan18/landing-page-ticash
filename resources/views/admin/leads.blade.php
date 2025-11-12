@@ -39,9 +39,19 @@
 
         <div class="relative z-10">
             <!-- Page Header -->
-            <div class="mb-8">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Daftar Permintaan Demo</h2>
-                <p class="text-slate-600">Kelola dan pantau semua permintaan demo dari calon pengguna ticash</p>
+            <div class="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Daftar Permintaan Demo</h2>
+                    <p class="text-slate-600">Kelola dan pantau semua permintaan demo dari calon pengguna ticash</p>
+                </div>
+
+                <!-- Back to Dashboard Button -->
+                <a href="{{ route('admin.dashboard') }}" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-500 text-white font-medium rounded-lg shadow-md hover:from-blue-400 hover:to-blue-500 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                    </svg>
+                    Kembali ke Dashboard
+                </a>
             </div>
 
             <!-- Leads Table -->

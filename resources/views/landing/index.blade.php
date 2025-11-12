@@ -22,10 +22,14 @@
         <div class="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-blue-700/30 z-10"></div>
 
         <div class="relative z-20 container mx-auto px-4 h-full grid lg:grid-cols-2 gap-8 items-center pt-20 lg:pt-0">
-
+            <!-- Bagian Kiri: Teks -->
             <div class="text-center lg:text-left text-white">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Solusi Cashless Modern untuk Pesantren</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto lg:mx-0">Tingkatkan efisiensi, transparansi, dan profitabilitas pesantren Anda dengan sistem transaksi digital ticash</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Solusi Cashless Modern untuk Pesantren
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto lg:mx-0">
+                    Tingkatkan efisiensi, transparansi, dan profitabilitas pesantren Anda dengan sistem transaksi digital ticash
+                </p>
                 <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                     <a href="#features" class="bg-yellow-400 text-slate-800 px-6 py-3 rounded-lg font-medium text-lg hover:bg-yellow-300 transition">
                         Pelajari Fitur
@@ -36,18 +40,20 @@
                 </div>
             </div>
 
+            <!-- Bagian Kanan: Animasi Lottie -->
             <div class="hidden lg:flex justify-center items-center">
-                <img src="{{ asset('images/hero-illustration.png') }}" alt="Ilustrasi Dashboard Keuangan ticash" class="w-full max-w-lg animate-float-slow">
+                <dotlottie-wc src="https://lottie.host/14117bd6-f3c6-49d2-bf0c-2620e03d17a4/7t7uy1coca.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
             </div>
-
         </div>
+
         <div class="absolute bottom-0 left-0 w-full h-80 z-10" style="background: linear-gradient(to top, 
-                #F8FAFC 20%,  /* Ini adalah slate-50 solid */
-                #F8FAFCB3 60%, /* Ini adalah slate-50 dengan opasitas 70% */
-                #F8FAFC00 100% /* Ini adalah slate-50 transparan (opasitas 0%) */
-             );">
+            #F8FAFC 20%,  
+            #F8FAFCB3 60%, 
+            #F8FAFC00 100%
+         );">
         </div>
     </section>
+
 
     <section id="problems" class="py-20 bg-slate-50">
         <div class="container mx-auto px-4">
@@ -56,7 +62,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                 <div class="flex justify-center">
-                    <img src="{{ asset('images/problem-illustration.png') }}" alt="Ilustrasi Masalah Pesantren" class="w-full max-w-md animate-float-slow">
+                    <dotlottie-wc src="https://lottie.host/33e12edf-1193-4648-b28a-437003a552a8/VhexuQx8aC.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
                 </div>
 
                 <div class="max-w-3xl w-full lg:mx-0" x-data="{ activeAccordion: null }">
@@ -109,7 +115,8 @@
                 <div x-data="{ shown: false }" x-intersect:enter="shown = true" :class="{ 'opacity-100 translate-y-0': shown, 'opacity-0 translate-y-10': !shown }" class="transition-all duration-500">
                     <div class="bg-white p-8 rounded-xl shadow-lg text-center h-full">
                         <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                            <img src="{{ asset('images/icon-efisien.png') }}" alt="Ikon Efisien" class="w-full h-full object-contain">
+                            <dotlottie-wc src="https://lottie.host/ccea7eb4-1b86-44a5-8cfc-b41eb805b8a5/4scQSxzksP.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-slate-800">Efisien & Efektif</h3>
                         <p class="text-slate-500">Proses transaksi cepat tanpa antrian panjang, menghemat waktu dan meningkatkan produktivitas.</p>
@@ -119,7 +126,7 @@
                 <div x-data="{ shown: false }" x-intersect:enter="shown = true" :class="{ 'opacity-100 translate-y-0': shown, 'opacity-0 translate-y-10': !shown }" class="transition-all duration-500" style="transition-delay: 200ms">
                     <div class="bg-white p-8 rounded-xl shadow-lg text-center h-full">
                         <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                            <img src="{{ asset('images/icon-transparan.png') }}" alt="Ikon Transparan" class="w-full h-full object-contain">
+                            <dotlottie-wc src="https://lottie.host/55f2be7d-ed81-4a93-ab9d-3693e7da47f0/KNLfUu2FnR.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-slate-800">Transparan & Akuntabel</h3>
                         <p class="text-slate-500">Laporan keuangan yang akurat dan dapat diakses secara real-time untuk meningkatkan transparansi.</p>
@@ -129,7 +136,7 @@
                 <div x-data="{ shown: false }" x-intersect:enter="shown = true" :class="{ 'opacity-100 translate-y-0': shown, 'opacity-0 translate-y-10': !shown }" class="transition-all duration-500" style="transition-delay: 400ms">
                     <div class="bg-white p-8 rounded-xl shadow-lg text-center h-full">
                         <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                            <img src="{{ asset('images/icon-aman.png') }}" alt="Ikon Aman" class="w-full h-full object-contain">
+                            <dotlottie-wc src="https://lottie.host/f32261f3-2baf-48d8-b568-d17fa9332f60/T702yD5MpL.lottie" style="width: 400px;height: 400px" autoplay loop></dotlottie-wc>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-slate-800">Aman & Terpercaya</h3>
                         <p class="text-slate-500">Perlindungan data dan keamanan transaksi yang terjamin dengan teknologi modern.</p>
@@ -379,7 +386,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                 <div class="hidden lg:flex justify-center">
-                    <img src="{{ asset('images/contact-illustration.png') }}" alt="Ilustrasi Kontak ticash" class="w-100 max-w-md animate-float-slow">
+                    <dotlottie-wc src="https://lottie.host/af8db9f6-4856-406f-9b6a-0805025b8343/CuGkGIddUy.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
                 </div>
 
                 <div>
@@ -507,4 +514,7 @@
         </div>
     </footer>
 </div>
+
+<!-- Tambahkan script Lottie di bawah (cukup sekali aja di halaman ini) -->
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
 @endsection
