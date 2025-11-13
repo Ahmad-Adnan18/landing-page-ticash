@@ -42,8 +42,11 @@
 
             <!-- Bagian Kanan: Animasi Lottie -->
             <div class="hidden lg:flex justify-center items-center">
-                <dotlottie-wc src="https://lottie.host/14117bd6-f3c6-49d2-bf0c-2620e03d17a4/7t7uy1coca.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
+                {{-- <dotlottie-wc src="https://lottie.host/14117bd6-f3c6-49d2-bf0c-2620e03d17a4/7t7uy1coca.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc> --}}
+                <dotlottie-wc src="{{ asset('lottie/Wallet.lottie') }}" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
             </div>
+            <!-- Tambahkan script Lottie -->
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         </div>
 
         <div class="absolute bottom-0 left-0 w-full h-80 z-10" style="background: linear-gradient(to top, 
