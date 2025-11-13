@@ -42,11 +42,30 @@
 
             <!-- Bagian Kanan: Animasi Lottie -->
             <div class="hidden lg:flex justify-center items-center">
-                {{-- <dotlottie-wc src="https://lottie.host/14117bd6-f3c6-49d2-bf0c-2620e03d17a4/7t7uy1coca.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc> --}}
-                <dotlottie-wc src="{{ asset('lottie/Wallet.lottie') }}" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
+                <dotlottie-player id="wallet-animation" src="{{ asset('lottie/Wallet.lottie') }}" background="transparent" speed="1" style="width: 500px; height: 500px;">
+                </dotlottie-player>
             </div>
-            <!-- Tambahkan script Lottie -->
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const player = document.getElementById('wallet-animation');
+
+                    // Saat mouse masuk (Hover)
+                    player.addEventListener('mouseenter', () => {
+                        player.setDirection(1); // Set arah maju (normal)
+                        player.play(); // Mainkan
+                    });
+
+                    // Saat mouse keluar (Lepas)
+                    player.addEventListener('mouseleave', () => {
+                        player.setDirection(-1); // Set arah mundur (rewind)
+                        player.play(); // Mainkan (karena arahnya -1, dia akan mundur)
+                    });
+                });
+
+            </script>
         </div>
 
         <div class="absolute bottom-0 left-0 w-full h-80 z-10" style="background: linear-gradient(to top, 
