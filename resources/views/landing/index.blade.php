@@ -41,88 +41,79 @@
             </div>
 
             <!-- Bagian Kanan: Animasi Lottie -->
-            <div class="hidden lg:flex justify-center items-center">
-                <dotlottie-player id="wallet-animation" src="{{ asset('lottie/Wallet.lottie') }}" background="transparent" speed="1" style="width: 500px; height: 500px;">
+            <!-- Perubahan di sini -->
+            <div class="flex justify-center items-center py-6 lg:py-0">
+                <dotlottie-player id="wallet-animation" src="{{ asset('lottie/Wallet.lottie') }}" background="transparent" speed="1" class="w-64 h-64 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px] mx-auto block">
                 </dotlottie-player>
             </div>
 
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
 
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const player = document.getElementById('wallet-animation');
-
-                    // Saat mouse masuk (Hover)
-                    player.addEventListener('mouseenter', () => {
-                        player.setDirection(1); // Set arah maju (normal)
-                        player.play(); // Mainkan
-                    });
-
-                    // Saat mouse keluar (Lepas)
-                    player.addEventListener('mouseleave', () => {
-                        player.setDirection(-1); // Set arah mundur (rewind)
-                        player.play(); // Mainkan (karena arahnya -1, dia akan mundur)
-                    });
-                });
-
-            </script>
         </div>
 
         <div class="absolute bottom-0 left-0 w-full h-80 z-10" style="background: linear-gradient(to top, 
-            #F8FAFC 20%,  
-            #F8FAFCB3 60%, 
-            #F8FAFC00 100%
-         );">
+        #F8FAFC 20%,  
+        #F8FAFCB3 60%, 
+        #F8FAFC00 100%
+        );">
         </div>
     </section>
 
 
     <section id="problems" class="py-20 bg-slate-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16 text-slate-800">Masalah Umum di Pesantren</h2>
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16 text-slate-800">Tantangan Umum di Pesantren</h2>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                 <div class="flex justify-center">
-                    <dotlottie-wc src="https://lottie.host/33e12edf-1193-4648-b28a-437003a552a8/VhexuQx8aC.lottie" class="w-full max-w-md animate-float-slow" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
+                    <dotlottie-wc src="https://lottie.host/33e12edf-1193-4648-b28a-437003a552a8/VhexuQx8aC.lottie" class="w-full max-w-md" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
                 </div>
 
-                <div class="max-w-3xl w-full lg:mx-0" x-data="{ activeAccordion: null }">
-                    <div class="mb-4">
-                        <button @click="activeAccordion = activeAccordion === 1 ? null : 1" class="w-full flex justify-between items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <span class="text-left font-medium">Infrastruktur</span>
-                            <svg :class="{'rotate-180': activeAccordion === 1}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <!-- [PERUBAHAN] Menghilangkan x-data dan accordion -->
+                <div class="max-w-3xl w-full lg:mx-0 space-y-6">
+
+                    <!-- Kartu 1: Infrastruktur -->
+                    <div class="problem-card bg-white p-6 rounded-xl shadow-lg flex items-start gap-5">
+                        <div class="flex-shrink-0">
+                            <!-- Ikon untuk Infrastruktur/Database -->
+                            <svg class="w-8 h-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                             </svg>
-                        </button>
-                        <div x-show="activeAccordion === 1" x-collapse class="p-4 bg-white rounded-b-lg border-t-0">
-                            <p>Manajemen keuangan yang masih manual menyebabkan pembukuan tidak akurat dan rentan terhadap kesalahan.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-slate-800">Pencatatan Manual</h3>
+                            <p class="text-slate-600">Manajemen keuangan yang masih manual menyebabkan pembukuan tidak akurat, memakan waktu, dan rentan terhadap kesalahan manusia.</p>
                         </div>
                     </div>
 
-                    <div class="mb-4">
-                        <button @click="activeAccordion = activeAccordion === 2 ? null : 2" class="w-full flex justify-between items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <span class="text-left font-medium">Transparansi</span>
-                            <svg :class="{'rotate-180': activeAccordion === 2}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    <!-- Kartu 2: Transparansi -->
+                    <div class="problem-card bg-white p-6 rounded-xl shadow-lg flex items-start gap-5">
+                        <div class="flex-shrink-0">
+                            <!-- Ikon untuk Transparansi -->
+                            <svg class="w-8 h-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.634l3.5-7a1.012 1.012 0 0 1 1.634 0l3.5 7a1.012 1.012 0 0 1 0 .634l-3.5 7a1.012 1.012 0 0 1-1.634 0l-3.5-7Zm18.364-3.5a1.012 1.012 0 0 1 0 .634l-3.5 7a1.012 1.012 0 0 1-1.634 0l-3.5-7a1.012 1.012 0 0 1 0-.634l3.5-7a1.012 1.012 0 0 1 1.634 0l3.5 7Z" />
                             </svg>
-                        </button>
-                        <div x-show="activeAccordion === 2" x-collapse class="p-4 bg-white rounded-b-lg border-t-0">
-                            <p>Keterbatasan sistem pelaporan menyebabkan kurangnya transparansi keuangan yang dapat dipertanggungjawabkan.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-slate-800">Kurangnya Transparansi</h3>
+                            <p class="text-slate-600">Orang tua kesulitan memantau pengeluaran anak. Sistem pelaporan yang terbatas menyulitkan audit dan pertanggungjawaban.</p>
                         </div>
                     </div>
 
-                    <div class="mb-4">
-                        <button @click="activeAccordion = activeAccordion === 3 ? null : 3" class="w-full flex justify-between items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <span class="text-left font-medium">Efisiensi</span>
-                            <svg :class="{'rotate-180': activeAccordion === 3}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    <!-- Kartu 3: Efisiensi -->
+                    <div class="problem-card bg-white p-6 rounded-xl shadow-lg flex items-start gap-5">
+                        <div class="flex-shrink-0">
+                            <!-- Ikon untuk Efisiensi -->
+                            <svg class="w-8 h-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836A1.5 1.5 0 0 1 12 3c.41 0 .79.168 1.06.44l3.15 3.15c.273.273.44.65.44 1.06v1.086c0 .41-.168.79-.44 1.06l-3.15 3.15c-.273.273-.65.44-1.06.44a1.5 1.5 0 0 1-1.06-.44L7.84 9.836a1.5 1.5 0 0 1-.44-1.06V7.684c0-.41.168-.79.44-1.06l3.15-3.15c.273-.273.65-.44 1.06-.44Zm0 9a1.5 1.5 0 0 1 1.06.44l3.15 3.15c.273.273.44.65.44 1.06v1.086c0 .41-.168.79-.44 1.06l-3.15 3.15c-.273.273-.65.44-1.06.44a1.5 1.5 0 0 1-1.06-.44l-3.15-3.15a1.5 1.5 0 0 1-.44-1.06v-1.086c0-.41.168-.79.44-1.06l3.15-3.15c.273-.273.65.44 1.06.44Z" />
                             </svg>
-                        </button>
-                        <div x-show="activeAccordion === 3" x-collapse class="p-4 bg-white rounded-b-lg border-t-0">
-                            <p>Proses transaksi yang memakan waktu menyebabkan antrian panjang dan penurunan produktivitas.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-slate-800">Proses Tidak Efisien</h3>
+                            <p class="text-slate-600">Proses pembayaran SPP, top-up saldo, atau transaksi di kantin sering memakan waktu, menyebabkan antrian, dan mengganggu produktivitas.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -169,96 +160,128 @@
         </div>
     </section>
 
-    <section id="features" class="py-20 bg-slate-50">
+    <!-- Bagian 05: Features -->
+    <section id="features" class="py-20">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16 text-slate-800">
-                Fitur Lengkap untuk Manajemen Keuangan
-            </h2>
+            <h2 class="text-3xl font-bold text-center mb-16 text-slate-800">Fitur Unggulan</h2>
 
-            <div x-data="{ activeFeature: 'mobile' }" class="max-w-6xl mx-auto">
-
-                <div class="flex justify-center gap-4 mb-10 lg:mb-16">
-                    <button @click="activeFeature = 'mobile'" :class="{ 'bg-blue-500 text-white shadow-lg': activeFeature === 'mobile', 'bg-white text-slate-700 hover:bg-slate-100 shadow-md': activeFeature !== 'mobile' }" class="flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
+            <!-- Interactive Feature Tabs -->
+            <div x-data="{ activeFeature: 'mobile' }" class="max-w-4xl mx-auto">
+                <!-- Tab Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-3 mb-12">
+                    <button @click="activeFeature = 'mobile'" :class="{
+                        'bg-blue-500 text-white': activeFeature === 'mobile',
+                        'bg-slate-100 text-slate-700 hover:bg-slate-200': activeFeature !== 'mobile'
+                    }" class="px-6 py-3 rounded-lg font-medium transition">
                         Aplikasi Mobile
                     </button>
-                    <button @click="activeFeature = 'admin'" :class="{ 'bg-blue-500 text-white shadow-lg': activeFeature === 'admin', 'bg-white text-slate-700 hover:bg-slate-100 shadow-md': activeFeature !== 'admin' }" class="flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1-.25M15 17H9m3 4c-.732 0-1.41-.336-1.92-1C9.07 19.345 8.412 19 7.5 19H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2h-.5c-.912 0-1.57-.345-2.08-1C13.41 20.664 12.732 21 12 21z"></path>
-                        </svg>
+                    <button @click="activeFeature = 'admin'" :class="{
+                        'bg-emerald-500 text-white': activeFeature === 'admin',
+                        'bg-slate-100 text-slate-700 hover:bg-slate-200': activeFeature !== 'admin'
+                    }" class="px-6 py-3 rounded-lg font-medium transition">
                         Dashboard Admin
                     </button>
                 </div>
 
-                <div class="relative">
-                    <div x-show="activeFeature === 'mobile'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200 absolute w-full" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="min-h-[500px]">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Feature Content -->
+                <div class="relative min-h-[400px]">
+                    <!-- Mobile App Feature -->
+                    <div x-show="activeFeature === 'mobile'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             <div class="flex justify-center">
-                                <img src="{{ asset('images/feature-mobile-mockup.png') }}" alt="Aplikasi Mobile ticash" class="w-80 max-w-6xl rounded-xl">
+                                <img src="{{ asset('images/feature-mobile-mockup.png') }}" alt="Aplikasi Mobile ticash" class="w-3/4 lg:w-[120%] max-w-8xl rounded-xl">
                             </div>
 
                             <div>
-                                <div class="bg-white p-8 rounded-xl shadow-lg">
-                                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Aplikasi Mobile untuk Santri & Orang Tua</h3>
-                                    <p class="text-slate-500 mb-6">Akses mudah untuk mengecek saldo, histori transaksi, dan melakukan top-up kapan saja dan di mana saja.</p>
-                                    <ul class="space-y-3">
-                                        <li class="flex items-start">
-                                            <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <h3 class="text-2xl font-bold mb-4 text-slate-800">Aplikasi Mobile untuk Santri & Orang Tua</h3>
+                                <p class="text-slate-600 mb-6">
+                                    Akses mudah untuk mengecek saldo, histori transaksi, dan melakukan top-up kapan saja dan di mana saja.
+                                </p>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405 1.405A2.032 2.032 0 0118 22H8a2.028 2.028 0 01-1.771-2.595L5 17h5m5 0v2a2 2 0 01-2 2H8a2 2 0 01-2-2v-2m5 0h2a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2v-6a2 2 0 012-2h2"></path>
                                             </svg>
-                                            <span class="text-slate-700">Notifikasi real-time untuk setiap transaksi</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800">Notifikasi Real-time</h4>
+                                            <p class="text-slate-600">Pemberitahuan instan untuk setiap transaksi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
                                             </svg>
-                                            <span class="text-slate-700">Fitur top-up saldo langsung dari HP</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800">Top-up Saldo Instan</h4>
+                                            <p class="text-slate-600">Fitur pengisian ulang saldo langsung dari aplikasi.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.8 0c-.719.56-1.949.232-3.048-.67-1.1-.9-2.417-1.125-3.632-1.125C6.512 2.25 5.25 2.688 4.125 3.375a48.424 48.424 0 00-1.123.08C2.845 3.552 2.25 4.515 2.25 5.892V18a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0016.5 18v-2.625m0 0a2.25 2.25 0 012.25-2.25h-9m0 8.625a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path>
                                             </svg>
-                                            <span class="text-slate-700">Laporan pengeluaran harian, mingguan dan bulanan</span>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800">Laporan Lengkap</h4>
+                                            <p class="text-slate-600">Laporan pengeluaran dengan periode harian, mingguan, dan bulanan.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
-                    <div x-show="activeFeature === 'admin'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200 absolute w-full" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="min-h-[500px]">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Admin Dashboard Feature -->
+                    <div x-show="activeFeature === 'admin'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             <div>
-                                <div class="bg-white p-8 rounded-xl shadow-lg">
-                                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Dashboard Admin Terpadu</h3>
-                                    <p class="text-slate-500 mb-6">Kelola semua transaksi dan keuangan pesantren secara real-time dari satu platform terpadu.</p>
-                                    <ul class="space-y-3">
-                                        <li class="flex items-start">
-                                            <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <h3 class="text-2xl font-bold mb-4 text-slate-800">Dashboard Admin Terpadu & Real-time</h3>
+                                <p class="text-slate-600 mb-6">
+                                    Kelola semua transaksi dan keuangan pesantren secara real-time dari satu platform terpadu.
+                                </p>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                                             </svg>
-                                            <span class="text-slate-700">Pengelolaan data santri dan wali murid</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800">Data Santri Terpusat</h4>
+                                            <p class="text-slate-600">Pengelolaan data santri dan wali murid yang terpusat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-6 3h6m2-6a4 4 0 11-8 0 4 4 0 018 0zM7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                                             </svg>
-                                            <span class="text-slate-700">Pembukuan otomatis dan laporan keuangan</span>
-                                        </li>
-                                        <li class="flex items-start">
-                                            <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800">Pembukuan Otomatis</h4>
+                                            <p class="text-slate-600">Pembukuan otomatis dan laporan keuangan real-time.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364a4.5 4.5 0 006.364-6.364L21.5 9a4.5 4.5 0 00-6.364-6.364L12 3.636a4.5 4.5 0 00-6.364 6.364z"></path>
                                             </svg>
-                                            <span class="text-slate-700">Modul keuangan yang terintegrasi</span>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800">Modul Terintegrasi</h4>
+                                            <p class="text-slate-600">Modul keuangan terintegrasi untuk SPP, tabungan, dan lainnya.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex justify-center">
-                                <img src="{{ asset('images/feature-admin-mockup.png') }}" alt="Dashboard Admin Terpadu ticash" class="w-3/4 lg:w-[180%] max-w-6xl rounded-xl">
+                            <div class="flex justify-center lg:h-[450px]">
+                                <img src="{{ asset('images/feature-admin-mockup.png') }}" alt="Dashboard Admin ticash" class="w-full h-auto max-h-full object-contain rounded-xl">
                             </div>
                         </div>
                     </div>
@@ -266,28 +289,6 @@
             </div>
         </div>
     </section>
-
-    <style>
-        /* Custom Float Animation */
-        @keyframes float-slow {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-20px);
-                /* Disesuaikan dengan float di hero */
-            }
-        }
-
-        .animate-float-slow {
-            /* Disesuaikan dengan float di hero, 4s */
-            animation: float-slow 4s ease-in-out infinite;
-        }
-
-    </style>
     <!-- Bagian 06: Pricing (Animated Counter) -->
     <section class="py-20">
         <div class="container mx-auto px-4">
@@ -538,5 +539,24 @@
 </div>
 
 <!-- Tambahkan script Lottie di bawah (cukup sekali aja di halaman ini) -->
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const player = document.getElementById('wallet-animation');
+
+        // Saat mouse masuk (Hover)
+        player.addEventListener('mouseenter', () => {
+            player.setDirection(1); // Set arah maju (normal)
+            player.play(); // Mainkan
+        });
+
+        // Saat mouse keluar (Lepas)
+        player.addEventListener('mouseleave', () => {
+            player.setDirection(-1); // Set arah mundur (rewind)
+            player.play(); // Mainkan (karena arahnya -1, dia akan mundur)
+        });
+    });
+
+</script>
 @endsection
