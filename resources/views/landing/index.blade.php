@@ -34,7 +34,7 @@
                     <a href="#features" class="bg-yellow-400 text-slate-800 px-6 py-3 rounded-lg font-medium text-lg hover:bg-yellow-300 transition">
                         Pelajari Fitur
                     </a>
-                    <a href="#contact" target="_blank" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-white/10 transition">
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-white/10 transition">
                         Demo Gratis
                     </a>
                 </div>
