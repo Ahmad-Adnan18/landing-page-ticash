@@ -9,7 +9,7 @@
                 <img :src="atTop ? '{{ asset('images/logo-ticash-white.png') }}' : '{{ asset('images/logo-ticash.png') }}'" alt="ticash Logo" class="h-8 w-auto mr-2 transition-colors duration-300">
                 <h1 :class="{ 'text-white': atTop, 'text-blue-500': !atTop }" class="text-2xl font-bold transition-colors duration-300">ticash</h1>
             </div>
-            <a href="#contact" :class="{ 'bg-yellow-400 text-slate-800': atTop, 'bg-yellow-500 text-slate-800': !atTop }" class="px-4 py-2 rounded-lg bg-yellow-400 font-medium hover:bg-yellow-300 transition">
+            <a href="{{ \App\Helpers\UrlHelper::generateWhatsAppUrlStatic() }}" target="_blank" :class="{ 'bg-yellow-400 text-slate-800': atTop, 'bg-yellow-500 text-slate-800': !atTop }" class="px-4 py-2 rounded-lg bg-yellow-400 font-medium hover:bg-yellow-300 transition">
                 Hubungi Kami
             </a>
         </div>
@@ -34,7 +34,7 @@
                     <a href="#features" class="bg-yellow-400 text-slate-800 px-6 py-3 rounded-lg font-medium text-lg hover:bg-yellow-300 transition">
                         Pelajari Fitur
                     </a>
-                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-white/10 transition">
+                    <a href="#contact" target="_blank" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-white/10 transition">
                         Demo Gratis
                     </a>
                 </div>

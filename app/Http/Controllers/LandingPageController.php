@@ -17,9 +17,10 @@ class LandingPageController extends Controller
         $contactNumber = \App\Models\Setting::getValue('contact_number', '');
         $contactEmail = \App\Models\Setting::getValue('contact_email', '');
         $whatsappNumber = \App\Models\Setting::getValue('whatsapp_number', '');
+        $whatsappDefaultMessage = \App\Models\Setting::getValue('whatsapp_default_message', 'Halo, saya tertarik dengan sistem ticash');
         $officeHours = \App\Models\Setting::getValue('office_hours', '');
-        
-        return view('landing.index', compact('testimonials', 'contactNumber', 'contactEmail', 'whatsappNumber', 'officeHours'));
+
+        return view('landing.index', compact('testimonials', 'contactNumber', 'contactEmail', 'whatsappNumber', 'whatsappDefaultMessage', 'officeHours'));
     }
 
     /**

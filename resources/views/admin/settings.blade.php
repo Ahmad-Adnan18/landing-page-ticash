@@ -70,6 +70,20 @@
                 <p class="mt-2 text-xs text-slate-500">WhatsApp number for direct customer support.</p>
             </div>
 
+            <!-- WhatsApp Default Message Field -->
+            <div>
+                <label for="whatsapp_default_message" class="block text-sm font-medium text-slate-700 mb-2">WhatsApp Default Message</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="w-5 h-5 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="whatsapp_default_message" name="whatsapp_default_message" value="{{ old('whatsapp_default_message', $whatsappDefaultMessage) }}" class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-slate-800 font-medium" placeholder="e.g., Halo, saya tertarik dengan sistem ticash">
+                </div>
+                <p class="mt-2 text-xs text-slate-500">Default message that appears when users contact via WhatsApp.</p>
+            </div>
+
             <!-- Office Hours Field -->
             <div>
                 <label for="office_hours" class="block text-sm font-medium text-slate-700 mb-2">Office Hours</label>

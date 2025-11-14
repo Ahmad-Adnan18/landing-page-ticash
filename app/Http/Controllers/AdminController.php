@@ -88,9 +88,10 @@ class AdminController extends Controller
         $contactNumber = \App\Models\Setting::getValue('contact_number', '');
         $contactEmail = \App\Models\Setting::getValue('contact_email', '');
         $whatsappNumber = \App\Models\Setting::getValue('whatsapp_number', '');
+        $whatsappDefaultMessage = \App\Models\Setting::getValue('whatsapp_default_message', 'Halo, saya tertarik dengan sistem ticash');
         $officeHours = \App\Models\Setting::getValue('office_hours', '');
 
-        return view('admin.settings', compact('contactNumber', 'contactEmail', 'whatsappNumber', 'officeHours'));
+        return view('admin.settings', compact('contactNumber', 'contactEmail', 'whatsappNumber', 'whatsappDefaultMessage', 'officeHours'));
     }
 
     public function updateSettings(Request $request)
@@ -99,12 +100,14 @@ class AdminController extends Controller
             'contact_number' => 'nullable|string|max:255',
             'contact_email' => 'nullable|email|max:255',
             'whatsapp_number' => 'nullable|string|max:255',
+            'whatsapp_default_message' => 'nullable|string|max:500',
             'office_hours' => 'nullable|string|max:255',
         ]);
 
         \App\Models\Setting::setValue('contact_number', $request->contact_number);
         \App\Models\Setting::setValue('contact_email', $request->contact_email);
         \App\Models\Setting::setValue('whatsapp_number', $request->whatsapp_number);
+        \App\Models\Setting::setValue('whatsapp_default_message', $request->whatsapp_default_message);
         \App\Models\Setting::setValue('office_hours', $request->office_hours);
 
         return redirect()->route('admin.settings')->with('success', 'Settings updated successfully');
