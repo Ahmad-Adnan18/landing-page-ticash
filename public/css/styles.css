@@ -452,27 +452,46 @@ input[type="checkbox"] {
     position: fixed;
     top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
     bottom: 0;
-    left: 0;
+    left: 100%;
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
     background-color: #ffffff;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .offcanvas-collapse.open {
     visibility: visible;
-    transform: translateX(0);
+    transform: translateX(-100%);
+}
+
+/* Untuk tampilan desktop (lg dan lebih besar), atur ulang posisi dan visibilitas */
+@media (min-width: 1024px) {
+    .offcanvas-collapse {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        padding-right: 0;
+        padding-left: 0;
+        overflow-y: visible;
+        visibility: visible;
+        background-color: transparent;
+        transform: none;
+        transition: none;
+        display: block !important;
+    }
 }
 
 .nav-link {
     display: block;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
-    color: #252c38;
+    color: #ffffff;
     text-decoration: none;
     line-height: 0.875rem;
     transition: all 0.2s ease;
@@ -1425,7 +1444,7 @@ a:hover.back-to-top {
 
 /* 3. Terapkan style footer baru yang gelap */
 .footer-new {
-    background-color: #000f72; /* Indigo-900 (Mirip gambar referensi) */
+    background-color: #050087; /* Indigo-900 (Mirip gambar referensi) */
     color: #cbd5e1; /* slate-300 */
     padding-top: 4rem;
     padding-bottom: 2rem;

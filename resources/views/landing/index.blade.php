@@ -18,7 +18,7 @@
             </button>
         </div>
 
-        <div class="navbar-collapse offcanvas-collapse lg:block lg:col-span-6" :class="{'open': open}" id="navbarsExampleDefault" x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform translate-x-full" x-transition:enter-end="transform translate-x-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform translate-x-0" x-transition:leave-end="transform translate-x-full" x-cloak>
+        <div class="navbar-collapse offcanvas-collapse lg:block lg:col-span-6" :class="{'open': open}" id="navbarsExampleDefault" x-show="open" @click.away="open = false" x-cloak>
 
             <div class="lg:flex lg:justify-end lg:items-center">
                 <ul class="pl-0 mt-3 mb-2 flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
