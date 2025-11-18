@@ -59,8 +59,8 @@
             <div class="mb-16 lg:mb-0 lg:mt-28">
                 <h1 class="text-4xl md:text-5xl font-bold mb-5 text-slate-800">Solusi Cashless Modern untuk Pesantren</h1>
                 <p class="text-lg text-slate-600 mb-8">Tingkatkan efisiensi, transparansi, dan profitabilitas pesantren Anda dengan sistem transaksi digital ticash.</p>
-                <a class="btn-solid-lg page-scroll" href="#benefits">
-                    Pelajari Manfaat
+                <a class="btn-solid-lg" href="#">
+                    Login
                 </a>
                 <a class="btn-solid-lg secondary page-scroll" href="#form-contact">
                     Demo Gratis
@@ -87,7 +87,7 @@
 </header>
 <div class="pt-4 pb-14 text-center bg-gray-50">
     <div class="container px-4 sm:px-8 xl:px-4">
-        <p class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto"> Sistem ticash adalah solusi manajemen keuangan digital yang dirancang khusus untuk pesantren modern. Jangan ragu untuk mencoba sistem kami hari ini dan rasakan manfaatnya</p>
+        <p class="mb-4 text-gray-800 text-2xl leading-10 lg:max-w-5xl lg:mx-auto"> Sistem ticash adalah solusi manajemen keuangan digital yang dirancang khusus untuk pesantren modern. Jangan ragu untuk mencoba sistem kami hari ini dan rasakan manfaatnya</p>
     </div>
 </div>
 <div id="problems" class="pt-12 pb-16 lg:pt-16 basic-5">
@@ -133,7 +133,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Efisien & Efektif</h5>
-                <p class="mb-4">Proses transaksi cepat tanpa antrian panjang, menghemat waktu dan meningkatkan produktivitas.</p>
+                <p class="mb-4">Setiap transaksi terpantau real-time oleh wali, menghasilkan kontrol dan transparansi penuh yang mustahil dicapai dengan sistem tunai.</p>
             </div>
         </div>
         <div class="card">
@@ -169,8 +169,8 @@
             <div class="lg:col-span-4">
 
                 <div class="flex items-start mb-8 lg:text-right">
-                    <div class="lg:order-2 flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg lg:ml-4 mr-4">
-                        <i class="fas fa-bell text-indigo-600 text-xl"></i>
+                    <div class="lg:order-2 flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg lg:ml-4 mr-4">
+                        <i class="fas fa-bell text-blue-600 text-xl"></i>
                     </div>
                     <div class="lg:order-1">
                         <h5 class="mb-1">Notifikasi Real-time</h5>
@@ -179,8 +179,8 @@
                 </div>
 
                 <div class="flex items-start mb-8 lg:text-right">
-                    <div class="lg:order-2 flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg lg:ml-4 mr-4">
-                        <i class="fas fa-wallet text-indigo-600 text-xl"></i>
+                    <div class="lg:order-2 flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg lg:ml-4 mr-4">
+                        <i class="fas fa-wallet text-blue-600 text-xl"></i>
                     </div>
                     <div class="lg:order-1">
                         <h5 class="mb-1">Top-up Saldo Instan</h5>
@@ -189,8 +189,8 @@
                 </div>
 
                 <div class="flex items-start mb-8 lg:text-right">
-                    <div class="lg:order-2 flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg lg:ml-4 mr-4">
-                        <i class="fas fa-chart-pie text-indigo-600 text-xl"></i>
+                    <div class="lg:order-2 flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg lg:ml-4 mr-4">
+                        <i class="fas fa-chart-pie text-blue-600 text-xl"></i>
                     </div>
                     <div class="lg:order-1">
                         <h5 class="mb-1">Laporan Lengkap</h5>
@@ -206,8 +206,8 @@
             <div class="lg:col-span-4">
 
                 <div class="flex items-start mb-8">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg mr-4">
-                        <i class="fas fa-ban text-indigo-600 text-xl"></i>
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mr-4">
+                        <i class="fas fa-ban text-blue-600 text-xl"></i>
                     </div>
                     <div>
                         <h5 class="mb-1">Limitasi Uang Jajan</h5>
@@ -216,8 +216,8 @@
                 </div>
 
                 <div class="flex items-start mb-8">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg mr-4">
-                        <i class="fas fa-file-invoice-dollar text-indigo-600 text-xl"></i>
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mr-4">
+                        <i class="fas fa-file-invoice-dollar text-blue-600 text-xl"></i>
                     </div>
                     <div>
                         <h5 class="mb-1">Pembayaran SPP</h5>
@@ -226,8 +226,8 @@
                 </div>
 
                 <div class="flex items-start mb-8">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg mr-4">
-                        <i class="fas fa-coins text-indigo-600 text-xl"></i>
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mr-4">
+                        <i class="fas fa-coins text-blue-600 text-xl"></i>
                     </div>
                     <div>
                         <h5 class="mb-1">Tabungan Bersama</h5>
@@ -284,460 +284,453 @@
     </div>
 </div>
 <!-- Special Section for Haji & Umroh Program -->
-<div id="haji-umroh" class="py-20 bg-gray">
+<<div id="haji-umroh" class="py-20 bg-gray">
     <div class="container px-4 sm:px-8">
         <div class="max-w-6xl mx-auto">
 
             <div class="text-center mb-16">
-                <p class="font-bold text-blue-600 mb-3">
-                    PROGRAM IBADAH SOSIAL
-                </p>
                 <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-                    Program Berkah Haji & Umroh
+                    Program Umroh Berkah
                 </h2>
                 <div class="w-32 h-0.5 bg-blue-600 mx-auto mb-4"></div>
                 <div class="w-20 h-0.5 bg-blue-600 mx-auto mb-4"></div>
+
                 <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-                    Dari setiap 15 jamaah yang mendaftar, Anda berkesempatan memberangkatkan 1 Ustadz/Ustadzah secara gratis sebagai bentuk amal jariyah.
+                    Bantu wujudkan impian usatdz/ustadzah ke tanah suci bersama program umroh berkah ticash.
+                </p>
+                <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                    Sekecil apa pun kontribusi Anda, menjadi bagian dari langkah mulia dan amal soleh.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8">
 
                 <div class="group relative bg-white rounded-2xl shadow-md p-6 overflow-hidden transition-all duration-300 hover:shadow-xl">
-
                     <div class="absolute -bottom-8 -left-8 w-24 h-24 
-                        bg-blue-300 rounded-full z-5 opacity-50 
+                        bg-blue-100 rounded-full z-5 opacity-50 
                         transition-all duration-300 group-hover:scale-110">
                     </div>
-
                     <div class="relative z-10 flex items-start space-x-4">
-                        <div class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
-                            <i class="fas fa-users text-xl text-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-3">Bonus Keberangkatan Ustadz/Ustadzah</h3>
-                            <p class="text-base text-slate-600">
-                                Setiap grup yang mencapai 15 jamaah otomatis mendapatkan 1 kuota keberangkatan gratis untuk Ustadz/Ustadzah dari lembaga sebagai bagian dari program sosial dan pendampingan ibadah.
-                            </p>
 
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+                            <i class="fas fa-users text-xl text-blue-600"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-3">1. Berangkatkan Ustadz/Ustadzah ke tanah suci</h3>
+                            <p class="text-base text-slate-600">Setiap 15 jamaah yang mendaftar, otomatis menghadiahkan 1 tiket umroh <strong>GRATIS</strong> untuk ustadz/ustadzah pilihan. Bersama kita bisa memberangkatkan para guru ke Tanah Suci.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="group relative bg-white rounded-2xl shadow-md p-6 overflow-hidden transition-all duration-300 hover:shadow-xl">
-
                     <div class="absolute -bottom-8 -left-8 w-24 h-24 
-                        bg-blue-300 rounded-full z-5 opacity-50 
+                        bg-blue-100 rounded-full z-5 opacity-50 
                         transition-all duration-300 group-hover:scale-110">
                     </div>
-
                     <div class="relative z-10 flex items-start space-x-4">
-                        <div class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
-                            <i class="fas fa-calendar-alt text-xl text-white"></i>
+
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+                            <i class="fas fa-calendar-alt text-xl text-blue-600"></i>
                         </div>
+
                         <div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-3">Tabungan Fleksibel</h3>
-                            <p class="text-base text-slate-600">
-                                Nikmati fitur tabungan Haji & Umroh dengan pilihan tenor fleksibel yang dapat disesuaikan dengan kemampuan dan perencanaan finansial keluarga Anda.
-                            </p>
+                            <h3 class="text-xl font-bold text-slate-800 mb-3">2. Tabungan Fleksibel</h3>
+                            <p class="text-base text-slate-600">Dengan Tabungan Umroh fleksibel, Anda bebas memilih masa menabung sesuai kemampuan dan perencanaan keuangan agar <strong>Lebih ringan, lebih teratur, lebih pasti berangkat.</strong></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="group relative bg-white rounded-2xl shadow-md p-6 overflow-hidden transition-all duration-300 hover:shadow-xl">
-
                     <div class="absolute -bottom-8 -left-8 w-24 h-24 
-                        bg-blue-300 rounded-full z-5 opacity-50 
+                        bg-blue-100 rounded-full z-5 opacity-50 
                         transition-all duration-300 group-hover:scale-110">
                     </div>
-
                     <div class="relative z-10 flex items-start space-x-4">
-                        <div class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
-                            <i class="fas fa-user-friends text-xl text-white"></i>
+
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+                            <i class="fas fa-user-friends text-xl text-blue-600"></i>
                         </div>
+
                         <div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-3">Hadirkan untuk Keluarga</h3>
-                            <p class="text-base text-slate-600">
-                                Daftarkan keluarga, kerabat, maupun orang terdekat dengan mudah. Semua pendaftaran dapat dikelola dalam satu akun untuk pengalaman yang lebih praktis dan terorganisir.
-                            </p>
+                            <h3 class="text-xl font-bold text-slate-800 mb-3">3. Hadirkan Untuk Keluarga</h3>
+                            <p class="text-base text-slate-600">Ajak dan rekomendasikan keluarga untuk bergabung dalam Program Umroh Berkah. Setiap rekomendasi menambah poin yang akan membantu menghadiahkan tiket umroh gratis bagi ustadz/ustadzah.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-
         </div>
     </div>
-</div>
+    </div>
 
-<div class="pt-16 pb-12 basic-5">
-    <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-        <div class="lg:col-span-5">
-            <div class="mb-16 lg:mb-0 xl:mt-16">
-                <h2 class="mb-6">Platform integrasi dan update seumur hidup gratis</h2>
-                <p class="mb-4">Dapatkan gambaran tentang apa yang dapat dilakukan ticash untuk otomasi keuangan pesantren dan pahami mengapa pengguna saat ini sangat antusias saat menggunakan ticash bersama tim mereka.</p>
-                <p class="mb-4">Kami akan segera menjawab pertanyaan apa pun dan menghormati permintaan Anda berdasarkan kesepakatan tingkat layanan</p>
+    <div class="pt-16 pb-12 basic-5">
+        <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+            <div class="lg:col-span-5">
+                <div class="mb-16 lg:mb-0 xl:mt-16">
+                    <h2 class="mb-6">Platform integrasi dan update seumur hidup gratis</h2>
+                    <p class="mb-4">Dapatkan gambaran tentang apa yang dapat dilakukan ticash untuk otomasi keuangan pesantren dan pahami mengapa pengguna saat ini sangat antusias saat menggunakan ticash bersama tim mereka.</p>
+                    <p class="mb-4">Kami akan segera menjawab pertanyaan apa pun dan menghormati permintaan Anda berdasarkan kesepakatan tingkat layanan</p>
+                </div>
             </div>
-        </div>
-        <div class="lg:col-span-7">
-            <div class="ml-14">
-                <dotlottie-player id="layers-animation" src="{{ asset('lottie/Layers.lottie') }}" background="transparent" speed="1" style="max-width: 500px; max-height: 500px;" loop autoplay>
-                </dotlottie-player>
+            <div class="lg:col-span-7">
+                <div class="ml-14">
+                    <dotlottie-player id="layers-animation" src="{{ asset('lottie/Layers.lottie') }}" background="transparent" speed="1" style="max-width: 500px; max-height: 500px;" loop autoplay>
+                    </dotlottie-player>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="counter bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
-    <div class="container px-4 sm:px-8">
-        <div class="max-w-l mx-auto text-center">
-            <div class="inline-block px-4 py-1.5 bg-gray-50 text-blue-900 rounded-full mb-6">
-                <span class="font-bold">KOMUNITAS KAMI</span>
+    <div class="counter bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+        <div class="container px-4 sm:px-8">
+            <div class="max-w-l mx-auto text-center">
+                <div class="inline-block px-4 py-1.5 bg-gray-50 text-blue-900 rounded-full mb-6">
+                    <span class="font-bold">KOMUNITAS KAMI</span>
+                </div>
+                <div class="counter-value number-count text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent" data-count="{{ $userCount ?? 0 }}">
+                    0
+                </div>
+                <p class="text-2xl md:text-3xl font-bold text-slate-800 mt-4">Orang Lebih Pengguna Terdaftar</p>
+                {{-- <p class="text-lg md:text-xl text-slate-600 mt-3 max-w-2xl mx-auto">Bergabunglah dengan komunitas pesantren yang telah mempercayai sistem kami</p> --}}
             </div>
-            <div class="counter-value number-count text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent" data-count="{{ $userCount ?? 0 }}">
-                0
-            </div>
-            <p class="text-2xl md:text-3xl font-bold text-slate-800 mt-4">Orang Lebih Pengguna Terdaftar</p>
-            {{-- <p class="text-lg md:text-xl text-slate-600 mt-3 max-w-2xl mx-auto">Bergabunglah dengan komunitas pesantren yang telah mempercayai sistem kami</p> --}}
         </div>
     </div>
-</div>
-<div id="testimonials" class="slider-1 py-20 bg-gray">
-    <div class="container px-4 sm:px-8">
-        <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">Apa kata mereka tentang ticash</h2>
+    <div id="testimonials" class="slider-1 py-20 bg-gray">
+        <div class="container px-4 sm:px-8">
+            <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">Apa kata mereka tentang ticash</h2>
 
-        <div class="slider-container">
-            <div class="swiper-container card-slider">
-                <div class="swiper-wrapper">
+            <div class="slider-container">
+                <div class="swiper-container card-slider">
+                    <div class="swiper-wrapper">
 
-                    @forelse($testimonials as $testimonial)
-                    <div class="swiper-slide">
-                        <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200 transition-all duration-300 hover:shadow-xl">
-                            <div class="flex flex-col items-center text-center mb-4">
-                                <div class="testimonial-avatar mb-3">
-                                    @if($testimonial->avatar_path)
-                                    <img class="rounded-full object-cover w-16 h-16" src="{{ Storage::url($testimonial->avatar_path) }}" alt="{{ $testimonial->name }}" />
-                                    @else
-                                    <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center mx-auto">
-                                        <span class="font-medium text-slate-600 text-xl">{{ substr($testimonial->name, 0, 1) }}</span>
+                        @forelse($testimonials as $testimonial)
+                        <div class="swiper-slide">
+                            <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex flex-col items-center text-center mb-4">
+                                    <div class="testimonial-avatar mb-3">
+                                        @if($testimonial->avatar_path)
+                                        <img class="rounded-full object-cover w-16 h-16" src="{{ Storage::url($testimonial->avatar_path) }}" alt="{{ $testimonial->name }}" />
+                                        @else
+                                        <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center mx-auto">
+                                            <span class="font-medium text-slate-600 text-xl">{{ substr($testimonial->name, 0, 1) }}</span>
+                                        </div>
+                                        @endif
                                     </div>
-                                    @endif
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">{{ $testimonial->name }}</h4>
+                                        <p class="text-slate-600">{{ $testimonial->position }}</p>
+                                        <p class="text-blue-600 font-medium">{{ $testimonial->institution }}</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-bold text-slate-800 text-lg">{{ $testimonial->name }}</h4>
-                                    <p class="text-slate-600">{{ $testimonial->position }}</p>
-                                    <p class="text-blue-600 font-medium">{{ $testimonial->institution }}</p>
+                                <div class="text-center">
+                                    <p class="italic text-slate-700 mb-4">"{{ $testimonial->quote }}"</p>
                                 </div>
                             </div>
-                            <div class="text-center">
-                                <p class="italic text-slate-700 mb-4">"{{ $testimonial->quote }}"</p>
+                        </div> @empty
+                        <div class="swiper-slide">
+                            <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200">
+                                <div class="flex flex-col items-center text-center mb-4">
+                                    <img class="rounded-full object-cover w-16 h-16 mb-3" src="images/testimonial-1.jpg" alt="alternative" />
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">Contoh Pengguna</h4>
+                                        <p class="text-slate-600">Bendahara</p>
+                                        <p class="text-blue-600 font-medium">Ponpes Al-Amanah</p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="italic text-slate-700 mb-4">"Sistem ticash sangat membantu dalam mengelola keuangan pesantren dengan lebih efisien dan transparan."</p>
+                                </div>
                             </div>
+                        </div> @endforelse
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="investment" class="py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container px-4 sm:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Proyek Sosial Wakaf</h2>
+
+                    <div class="mb-8">
+                        <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full mb-4">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-medium">100% Diwakafkan</span>
                         </div>
-                    </div> @empty
-                    <div class="swiper-slide">
-                        <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200">
-                            <div class="flex flex-col items-center text-center mb-4">
-                                <img class="rounded-full object-cover w-16 h-16 mb-3" src="images/testimonial-1.jpg" alt="alternative" />
-                                <div>
-                                    <h4 class="font-bold text-slate-800 text-lg">Contoh Pengguna</h4>
-                                    <p class="text-slate-600">Bendahara</p>
-                                    <p class="text-blue-600 font-medium">Ponpes Al-Amanah</p>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <p class="italic text-slate-700 mb-4">"Sistem ticash sangat membantu dalam mengelola keuangan pesantren dengan lebih efisien dan transparan."</p>
-                            </div>
+
+                        <p class="text-slate-600 text-lg mb-6">Sistem ticash adalah proyek sosial yang didedikasikan sepenuhnya untuk kemaslahatan pesantren di seluruh Indonesia</p>
+
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 mb-8 text-white max-w-2xl mx-auto">
+                            <h3 class="text-xl font-bold mb-2">Nilai Investasi</h3>
+                            <div class="text-4xl font-bold">Rp 350.000.000</div>
+                            <p class="text-blue-100 mt-2">Telah diwakafkan untuk kemaslahatan umat</p>
                         </div>
-                    </div> @endforelse
-
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="investment" class="py-16 bg-gradient-to-b from-blue-50 to-white">
-    <div class="container px-4 sm:px-8">
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Proyek Sosial Wakaf</h2>
-
-                <div class="mb-8">
-                    <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full mb-4">
-                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="font-medium">100% Diwakafkan</span>
                     </div>
 
-                    <p class="text-slate-600 text-lg mb-6">Sistem ticash adalah proyek sosial yang didedikasikan sepenuhnya untuk kemaslahatan pesantren di seluruh Indonesia</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-3">Apa yang Diwakafkan</h4>
+                            <ul class="space-y-2 text-slate-600">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Full akses ke sistem</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Support dan maintenance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Update fitur seumur hidup</span>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 mb-8 text-white max-w-2xl mx-auto">
-                        <h3 class="text-xl font-bold mb-2">Nilai Investasi</h3>
-                        <div class="text-4xl font-bold">Rp 350.000.000</div>
-                        <p class="text-blue-100 mt-2">Telah diwakafkan untuk kemaslahatan umat</p>
+                        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-3">Manfaat Wakaf</h4>
+                            <ul class="space-y-2 text-slate-600">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Pesantren terbantu dalam manajemen keuangan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Transparansi keuangan pesantren meningkat</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Operasional pesantren lebih efisien</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                        <h4 class="font-bold text-slate-800 mb-3">Apa yang Diwakafkan</h4>
-                        <ul class="space-y-2 text-slate-600">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span>Full akses ke sistem</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span>Support dan maintenance</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span>Update fitur seumur hidup</span>
-                            </li>
-                        </ul>
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <p class="text-slate-600 max-w-2xl mx-auto">TiCash menghadirkan terobosan: seluruh nilai investasinya 100% diwakafkan. Pesantren hanya perlu menyiapkan biaya operasional dasar, sementara manfaat wakafnya terus tumbuh bagi umat</p>
                     </div>
-
-                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                        <h4 class="font-bold text-slate-800 mb-3">Manfaat Wakaf</h4>
-                        <ul class="space-y-2 text-slate-600">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <span>Pesantren terbantu dalam manajemen keuangan</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <span>Transparansi keuangan pesantren meningkat</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <span>Operasional pesantren lebih efisien</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mt-8 pt-6 border-t border-slate-200">
-                    <p class="text-slate-600 max-w-2xl mx-auto">Dengan sistem ticash yang 100% diwakafkan, pesantren hanya perlu menanggung biaya operasional minimal, sedangkan nilai investasi utama telah diwakafkan untuk kemaslahatan umat.</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="form-contact" class="basic-5">
-    <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
-        <div class="mb-16 lg:mb-0">
-            <dotlottie-wc src="https://lottie.host/af8db9f6-4856-406f-9b6a-0805025b8343/CuGkGIddUy.lottie" class="inline w-full max-w-md" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
-        </div>
-        <div class="lg:mt-12 xl:mt-24 xl:ml-12">
-            <h2 class="text-3xl font-bold mb-4 text-slate-800">Tertarik dengan Solusi Kami?</h2>
-            <p class="text-slate-500 mb-8">Isi formulir di bawah untuk mendapatkan demo gratis dan informasi lebih lanjut.</p>
-
-            <form method="POST" action="{{ route('landing.kontak') }}">
-                @csrf
-                <div class="form-group">
-                    <input type="text" id="name" name="name" class="form-control-input" required>
-                    <label class="label-control" for="name">Nama Lengkap</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="pesantren_name" name="pesantren_name" class="form-control-input" required>
-                    <label class="label-control" for="pesantren_name">Nama Pesantren</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="position" name="position" class="form-control-input" required>
-                    <label class="label-control" for="position">Jabatan</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="whatsapp_number" name="whatsapp_number" class="form-control-input" required>
-                    <label class="label-control" for="whatsapp_number">No. WhatsApp</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" class="form-control-input">
-                    <label class="label-control" for="email">Email (Opsional)</label>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="form-control-submit-button">Kirim Permintaan Demo</button>
-                </div>
-
-                @if(session('success'))
-                <div class="mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
-                    {{ session('success') }}
-                </div>
-                @endif
-            </form>
-        </div>
-    </div>
-</div>
-<!-- Footer BARU (Menggantikan .footer dan .copyright) -->
-<div class="footer-new">
-    <div class="container px-4 sm:px-8">
-
-        <hr class="footer-divider" />
-
-        <div class="lg:grid lg:grid-cols-3 lg:gap-x-8 mt-4">
-
-            <div class="brand-section">
-                <div class="logo-title mb-4 flex items-center">
-                    <img src="{{ asset('images/logo-ticash-white.png') }}" alt="ticash Logo" class="h-10 mr-3" />
-                    <h5 class="text-white text-2xl font-bold">ticash</h5>
-                </div>
-                <p class="mb-6 max-w-md">
-                    Solusi manajemen keuangan digital untuk pesantren. Platform integrasi dan update seumur hidup gratis untuk kemaslahatan umat.
-                </p>
-                <div class="social-links mb-8 flex space-x-4">
-                    <a href="{{ \App\Helpers\UrlHelper::generateWhatsAppUrlStatic() }}" target="_blank" title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
+    <div id="form-contact" class="basic-5">
+        <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
+            <div class="mb-16 lg:mb-0">
+                <dotlottie-wc src="https://lottie.host/af8db9f6-4856-406f-9b6a-0805025b8343/CuGkGIddUy.lottie" class="inline w-full max-w-md" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
             </div>
+            <div class="lg:mt-12 xl:mt-24 xl:ml-12">
+                <h2 class="text-3xl font-bold mb-4 text-slate-800">Tertarik dengan Solusi Kami?</h2>
+                <p class="text-slate-500 mb-8">Isi formulir di bawah untuk mendapatkan demo gratis dan informasi lebih lanjut.</p>
 
-            <div>
-                <h5 class="text-white font-bold uppercase mb-4 mt-8 lg:mt-0">Hubungi Kami</h5>
-                <ul class="list-unstyled contact-info">
+                <form method="POST" action="{{ route('landing.kontak') }}">
+                    @csrf
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control-input" required>
+                        <label class="label-control" for="name">Nama Lengkap</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="pesantren_name" name="pesantren_name" class="form-control-input" required>
+                        <label class="label-control" for="pesantren_name">Nama Pesantren</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="position" name="position" class="form-control-input" required>
+                        <label class="label-control" for="position">Jabatan</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="whatsapp_number" name="whatsapp_number" class="form-control-input" required>
+                        <label class="label-control" for="whatsapp_number">No. WhatsApp</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control-input">
+                        <label class="label-control" for="email">Email (Opsional)</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">Kirim Permintaan Demo</button>
+                    </div>
 
-                    @if(isset($whatsappNumber) && $whatsappNumber)
-                    <li class="flex">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>{{ $whatsappNumber }}</span>
-                    </li>
+                    @if(session('success'))
+                    <div class="mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                        {{ session('success') }}
+                    </div>
                     @endif
-
-                    @if(isset($contactEmail) && $contactEmail)
-                    <li class="flex">
-                        <i class="fas fa-envelope"></i>
-                        <span><a href="mailto:{{ $contactEmail }}" class="text-white hover:text-blue-300">{{ $contactEmail }}</a></span>
-                    </li>
-                    @endif
-
-                    <li class="flex">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Grand Batavia Groove 02/03 Kel. Sindang Sari Kec. Pasar Kemis Kab. Tangerang Banten 15560</span>
-                    </li>
-
-                    @if(isset($officeHours) && $officeHours)
-                    <li class="flex">
-                        <i class="fas fa-clock"></i>
-                        <span class="office-hours">{{ $officeHours }}</span>
-                    </li>
-                    @endif
-                </ul>
+                </form>
             </div>
-
-            <div>
-                <h5 class="text-white font-bold uppercase mb-4 mt-8 lg:mt-0">Pesan Kami</h5>
-                <div class="mt-4">
-                    <a href="{{ \App\Helpers\UrlHelper::generateWhatsAppUrlStatic() }}" target="_blank" class="contact-btn">
-                        <i class="fab fa-whatsapp"></i>Hubungi Sekarang
-                    </a>
-                </div>
-            </div>
-
         </div>
-        <hr class="border-gray-700 my-2" />
-        <div class="text-center">
-            <p class="p-small">Copyright © {{ date('Y') }} <a href="#" class="no-underline hover:text-white">ticash</a>. All rights reserved.</p>
-        </div>
-
     </div>
-</div>
-@endsection
+    <!-- Footer BARU (Menggantikan .footer dan .copyright) -->
+    <div class="footer-new bg-blue-800">
+        <div class="container px-4 sm:px-8">
 
-@push('styles')
-<style>
-    .testimonial-avatar {
-        margin-bottom: 1rem;
-        text-align: center;
-    }
+            <hr class="border-slate-700 my-2" />
 
-    .testimonial-avatar img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto;
-        aspect-ratio: 1/1;
-    }
+            <div class="lg:grid lg:grid-cols-3 lg:gap-x-8 mt-4">
 
-    /* Additional testimonial styles */
-    #testimonials .card {
-        height: 100%;
-    }
+                <div class="brand-section">
+                    <div class="logo-title mb-4 flex items-center">
+                        <img src="{{ asset('images/logo-ticash-white.png') }}" alt="ticash Logo" class="h-10 mr-3" />
+                        <h5 class="text-white text-2xl font-bold">ticash</h5>
+                    </div>
+                    <p class="mb-6 max-w-md">
+                        Solusi manajemen keuangan digital untuk pesantren. Platform integrasi dan update seumur hidup gratis untuk kemaslahatan umat.
+                    </p>
+                    <div class="social-links mb-8 flex space-x-4">
+                        <a href="{{ \App\Helpers\UrlHelper::generateWhatsAppUrlStatic() }}" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
 
-    #testimonials .testimonial-avatar img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+                <div>
+                    <h5 class="text-white font-bold uppercase mb-4 mt-8 lg:mt-0">Hubungi Kami</h5>
+                    <ul class="list-unstyled contact-info">
 
-</style>
-@endpush
+                        @if(isset($whatsappNumber) && $whatsappNumber)
+                        <li class="flex">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>{{ $whatsappNumber }}</span>
+                        </li>
+                        @endif
 
-@push('scripts')
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
-<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+                        @if(isset($contactEmail) && $contactEmail)
+                        <li class="flex">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:{{ $contactEmail }}" class="text-white hover:text-blue-300">{{ $contactEmail }}</a></span>
+                        </li>
+                        @endif
 
-<script>
-    // Counter animation
-    document.addEventListener('DOMContentLoaded', function() {
-        const counterElement = document.querySelector('.counter-value');
-        if (counterElement) {
-            const targetCount = parseInt(counterElement.getAttribute('data-count')) || 0;
-            const suffix = counterElement.getAttribute('data-suffix') || ''; // Default suffix adalah +
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Grand Batavia Groove 02/03 Kel. Sindang Sari Kec. Pasar Kemis Kab. Tangerang Banten 15560</span>
+                        </li>
 
-            // Function to animate the counter
-            const animateCounter = () => {
-                const duration = 2000; // Animation duration in ms
-                const frameDuration = 1000 / 60; // ~60fps
-                let currentCount = 0;
-                const increment = targetCount / (duration / frameDuration);
+                        @if(isset($officeHours) && $officeHours)
+                        <li class="flex">
+                            <i class="fas fa-clock"></i>
+                            <span class="office-hours">{{ $officeHours }}</span>
+                        </li>
+                        @endif
+                    </ul>
+                </div>
 
-                const updateCount = () => {
-                    currentCount += increment;
-                    if (currentCount < targetCount) {
-                        // Format number dengan thousand separator dan tambahkan suffix
-                        counterElement.textContent = Math.floor(currentCount).toLocaleString() + suffix;
-                        requestAnimationFrame(updateCount);
-                    } else {
-                        // Final value dengan suffix
-                        counterElement.textContent = targetCount.toLocaleString() + suffix;
-                    }
+                <div>
+                    <h5 class="text-white font-bold uppercase mb-4 mt-8 lg:mt-0">Pesan Kami</h5>
+                    <div class="mt-4">
+                        <a href="{{ \App\Helpers\UrlHelper::generateWhatsAppUrlStatic() }}" target="_blank" class="contact-btn">
+                            <i class="fab fa-whatsapp"></i>Hubungi Sekarang
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="border-slate-700 my-2" />
+            <div class="text-center">
+                <p class="p-small">Copyright © {{ date('Y') }} <a href="#" class="no-underline hover:text-white">ticash</a>. All rights reserved.</p>
+            </div>
+
+        </div>
+    </div>
+    @endsection
+
+    @push('styles')
+    <style>
+        .testimonial-avatar {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .testimonial-avatar img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            aspect-ratio: 1/1;
+        }
+
+        /* Additional testimonial styles */
+        #testimonials .card {
+            height: 100%;
+        }
+
+        #testimonials .testimonial-avatar img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    </style>
+    @endpush
+
+    @push('scripts')
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+
+    <script>
+        // Counter animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const counterElement = document.querySelector('.counter-value');
+            if (counterElement) {
+                const targetCount = parseInt(counterElement.getAttribute('data-count')) || 0;
+                const suffix = counterElement.getAttribute('data-suffix') || ''; // Default suffix adalah +
+
+                // Function to animate the counter
+                const animateCounter = () => {
+                    const duration = 2000; // Animation duration in ms
+                    const frameDuration = 1000 / 60; // ~60fps
+                    let currentCount = 0;
+                    const increment = targetCount / (duration / frameDuration);
+
+                    const updateCount = () => {
+                        currentCount += increment;
+                        if (currentCount < targetCount) {
+                            // Format number dengan thousand separator dan tambahkan suffix
+                            counterElement.textContent = Math.floor(currentCount).toLocaleString() + suffix;
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            // Final value dengan suffix
+                            counterElement.textContent = targetCount.toLocaleString() + suffix;
+                        }
+                    };
+
+                    updateCount();
                 };
 
-                updateCount();
-            };
-
-            // Trigger animation when counter comes into view
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounter();
-                        observer.unobserve(counterElement);
-                    }
+                // Trigger animation when counter comes into view
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounter();
+                            observer.unobserve(counterElement);
+                        }
+                    });
+                }, {
+                    threshold: 0.5
                 });
-            }, {
-                threshold: 0.5
-            });
 
-            observer.observe(counterElement);
-        }
-    });
+                observer.observe(counterElement);
+            }
+        });
 
-</script>
-@endpush
+    </script>
+    @endpush
