@@ -1328,8 +1328,8 @@ a:hover.back-to-top {
     .navbar .logo-text {
         display: inline-block;
         color: white;
-        font-weight: 600;
-        font-size: 2rem; /* Menyesuaikan ukuran teks 'Pavo' */
+        font-weight: 800;
+        font-size: 3rem; /* Menyesuaikan ukuran teks 'Pavo' */
         vertical-align: middle;
     }
 

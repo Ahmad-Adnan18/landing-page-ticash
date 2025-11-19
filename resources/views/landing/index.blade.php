@@ -7,10 +7,10 @@
 
         <div class="lg:col-start-2 lg:col-span-5 px-4 sm:px-8 lg:px-0 flex justify-between items-center">
 
-            <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/">
+            <a class="inline-block mr-4 py-0.5 whitespace-nowrap hover:no-underline focus:no-underline" href="/">
                 <img src="{{ asset('images/logo-ticash-white.png') }}" alt="ticash Logo" class="h-10 logo-light" />
-                <img src="{{ asset('images/logo-ticash.png') }}" alt="ticash Logo" class="h-10 logo-dark" />
-                <span class="logo-text">ticash</span>
+                <img src="{{ asset('images/ticash-logo.png') }}" alt="ticash Logo" class="h-10 logo-dark" />
+                {{-- <span class="logo-text font-bold text-2xl">ticash</span> --}}
             </a>
 
             <button @click="open = !open" class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden" type="button">
@@ -25,9 +25,9 @@
                     <li>
                         <a class="nav-link page-scroll" href="#header" @click="open = false">Home</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a class="nav-link page-scroll" href="#problems" @click="open = false">Tantangan</a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a class="nav-link page-scroll" href="#benefits" @click="open = false">Manfaat</a>
                     </li>
@@ -90,7 +90,7 @@
         <p class="mb-4 text-gray-800 text-2xl leading-10 lg:max-w-5xl lg:mx-auto"> Sistem ticash adalah solusi manajemen keuangan digital yang dirancang khusus untuk pesantren modern. Jangan ragu untuk mencoba sistem kami hari ini dan rasakan manfaatnya</p>
     </div>
 </div>
-<div id="problems" class="pt-12 pb-16 lg:pt-16 basic-5">
+{{-- <div id="problems" class="pt-12 pb-16 lg:pt-16 basic-5">
     <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
         <div class="lg:col-span-5">
             <div class="mb-16 lg:mb-0 xl:mt-16">
@@ -120,12 +120,13 @@
         <div class="lg:col-span-7">
             <div class="xl:ml-14">
                 <img class="w-full h-auto" src="{{ asset('images/problem-icon.png') }}" alt="Aplikasi Mobile ticash" style="max-width: 500px;" />
-            </div>
-        </div>
-    </div>
 </div>
+</div>
+</div>
+</div> --}}
 <div id="benefits" class="cards-1">
     <div class="container px-4 sm:px-8 xl:px-4">
+        <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">Benefits</h2>
 
         <div class="card">
             <div class="card-image">
@@ -133,7 +134,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Efisien & Efektif</h5>
-                <p class="mb-4">Setiap transaksi terpantau real-time oleh wali, menghasilkan kontrol dan transparansi penuh yang mustahil dicapai dengan sistem tunai.</p>
+                <p class="mb-4">Orang tua dapat mengisi saldo dari rumah, melakukan berbagai pembayaran pesantren, memantau dan mengontrol penggunaan keuangan anak berapa yang dibelanjakan, digunakan untuk apa, dan kapan.</p>
             </div>
         </div>
         <div class="card">
@@ -142,7 +143,8 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Transparan & Akuntabel</h5>
-                <p class="mb-4">Laporan keuangan yang akurat dan dapat diakses secara real-time untuk meningkatkan transparansi.</p>
+                <p class="mb-4">Sistem ticash mempercepat proses pembayaran di koperasi, kantin, atau layanan pondok lainnya. Administrasi keuangan pondok juga menjadi lebih rapi, mudah direkap, dan mengurangi potensi kesalahan pencatatan manual.
+                </p>
             </div>
         </div>
         <div class="card">
@@ -151,7 +153,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Aman & Terpercaya</h5>
-                <p class="mb-4">Perlindungan data dan keamanan transaksi yang terjamin dengan teknologi modern.</p>
+                <p class="mb-4">Dengan sistem ticash, santri tidak perlu membawa uang tunai dalam jumlah banyak sehingga risiko kehilangan, pencurian, atau penggunaan tidak sesuai bisa diminimalkan. Pihak pondok juga lebih mudah memantau alur transaksi secara transparan dan akurat.</p>
             </div>
         </div>
     </div>
@@ -283,6 +285,25 @@
         </div>
     </div>
 </div>
+
+<div class="pt-16 pb-12 basic-5">
+    <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+        <div class="lg:col-span-5">
+            <div class="mb-16 lg:mb-0 xl:mt-16">
+                <h2 class="mb-6">Platform integrasi dan update seumur hidup gratis</h2>
+                <p class="mb-4">Dapatkan gambaran tentang apa yang dapat dilakukan ticash untuk otomasi keuangan pesantren dan pahami mengapa pengguna saat ini sangat antusias saat menggunakan ticash bersama tim mereka.</p>
+                <p class="mb-4">Kami akan segera menjawab pertanyaan apa pun dan menghormati permintaan Anda berdasarkan kesepakatan tingkat layanan</p>
+            </div>
+        </div>
+        <div class="lg:col-span-7">
+            <div class="ml-14">
+                <dotlottie-player id="layers-animation" src="{{ asset('lottie/Layers.lottie') }}" background="transparent" speed="1" style="max-width: 500px; max-height: 500px;" loop autoplay>
+                </dotlottie-player>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Special Section for Haji & Umroh Program -->
 <<div id="haji-umroh" class="py-20 bg-gray">
     <div class="container px-4 sm:px-8">
@@ -364,23 +385,6 @@
     </div>
     </div>
 
-    <div class="pt-16 pb-12 basic-5">
-        <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-            <div class="lg:col-span-5">
-                <div class="mb-16 lg:mb-0 xl:mt-16">
-                    <h2 class="mb-6">Platform integrasi dan update seumur hidup gratis</h2>
-                    <p class="mb-4">Dapatkan gambaran tentang apa yang dapat dilakukan ticash untuk otomasi keuangan pesantren dan pahami mengapa pengguna saat ini sangat antusias saat menggunakan ticash bersama tim mereka.</p>
-                    <p class="mb-4">Kami akan segera menjawab pertanyaan apa pun dan menghormati permintaan Anda berdasarkan kesepakatan tingkat layanan</p>
-                </div>
-            </div>
-            <div class="lg:col-span-7">
-                <div class="ml-14">
-                    <dotlottie-player id="layers-animation" src="{{ asset('lottie/Layers.lottie') }}" background="transparent" speed="1" style="max-width: 500px; max-height: 500px;" loop autoplay>
-                    </dotlottie-player>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="counter bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
         <div class="container px-4 sm:px-8">
             <div class="max-w-l mx-auto text-center">
@@ -395,61 +399,7 @@
             </div>
         </div>
     </div>
-    <div id="testimonials" class="slider-1 py-20 bg-gray">
-        <div class="container px-4 sm:px-8">
-            <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">Apa kata mereka tentang ticash</h2>
 
-            <div class="slider-container">
-                <div class="swiper-container card-slider">
-                    <div class="swiper-wrapper">
-
-                        @forelse($testimonials as $testimonial)
-                        <div class="swiper-slide">
-                            <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200 transition-all duration-300 hover:shadow-xl">
-                                <div class="flex flex-col items-center text-center mb-4">
-                                    <div class="testimonial-avatar mb-3">
-                                        @if($testimonial->avatar_path)
-                                        <img class="rounded-full object-cover w-16 h-16" src="{{ Storage::url($testimonial->avatar_path) }}" alt="{{ $testimonial->name }}" />
-                                        @else
-                                        <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center mx-auto">
-                                            <span class="font-medium text-slate-600 text-xl">{{ substr($testimonial->name, 0, 1) }}</span>
-                                        </div>
-                                        @endif
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-slate-800 text-lg">{{ $testimonial->name }}</h4>
-                                        <p class="text-slate-600">{{ $testimonial->position }}</p>
-                                        <p class="text-blue-600 font-medium">{{ $testimonial->institution }}</p>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <p class="italic text-slate-700 mb-4">"{{ $testimonial->quote }}"</p>
-                                </div>
-                            </div>
-                        </div> @empty
-                        <div class="swiper-slide">
-                            <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200">
-                                <div class="flex flex-col items-center text-center mb-4">
-                                    <img class="rounded-full object-cover w-16 h-16 mb-3" src="images/testimonial-1.jpg" alt="alternative" />
-                                    <div>
-                                        <h4 class="font-bold text-slate-800 text-lg">Contoh Pengguna</h4>
-                                        <p class="text-slate-600">Bendahara</p>
-                                        <p class="text-blue-600 font-medium">Ponpes Al-Amanah</p>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <p class="italic text-slate-700 mb-4">"Sistem ticash sangat membantu dalam mengelola keuangan pesantren dengan lebih efisien dan transparan."</p>
-                                </div>
-                            </div>
-                        </div> @endforelse
-
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div id="investment" class="py-16 bg-gradient-to-b from-blue-50 to-white">
         <div class="container px-4 sm:px-8">
             <div class="max-w-4xl mx-auto">
@@ -505,19 +455,19 @@
                                     <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <span>Pesantren terbantu dalam manajemen keuangan</span>
+                                    <span>Tidak ada biaya lisensi (Free)</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <span>Transparansi keuangan pesantren meningkat</span>
+                                    <span>Tambahan income pesantren</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <span>Operasional pesantren lebih efisien</span>
+                                    <span>Tanpa kerjasama bank/pihak lain</span>
                                 </li>
                             </ul>
                         </div>
@@ -530,6 +480,193 @@
             </div>
         </div>
     </div>
+    <!-- Bagian Alur Pendaftaran (Persis Seperti Gambar Referensi) -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+
+            <!-- Header -->
+            <div class="text-center mb-16 lg:mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Langkah Mudah Memulai</h2>
+                <p class="text-slate-500 max-w-xl mx-auto text-lg">Ikuti 3 langkah sederhana ini untuk mendigitalkan manajemen keuangan pesantren Anda.</p>
+            </div>
+
+            <!-- DESKTOP: Garis Lengkung SINE WAVE (Lembah-Bukit-Lembah) -->
+            <div class="hidden lg:block relative h-[500px] max-w-7xl mx-auto">
+
+                <!-- 
+                    SVG PATH UPDATED:
+                    M0,200    -> Mulai dari kiri tengah
+                    C...      -> Kurva Bezier
+                    215,350   -> Turun ke LEMBAH (Posisi Dot 1)
+                    640,50    -> Naik ke PUNCAK (Posisi Dot 2)
+                    1065,350  -> Turun ke LEMBAH (Posisi Dot 3)
+                    1280,200  -> Selesai di kanan tengah
+                -->
+                <svg class="absolute inset-x-0 top-0 w-full h-full pointer-events-none" viewBox="0 0 1280 500" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="gradientLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.2" />
+                            <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.2" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Garis Utama -->
+                    <path d="M -50,250 
+                             C 50,250 100,400 215,400 
+                             S 450,80 640,80 
+                             S 950,400 1065,400 
+                             S 1230,250 1330,250" fill="none" stroke="url(#gradientLine)" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 12" />
+                </svg>
+
+                <!-- 3 KOLOM GRID -->
+                <!-- 'items-stretch' agar kita bisa memposisikan elemen secara vertikal relatif terhadap tinggi container -->
+                <div class="grid grid-cols-3 h-full relative z-10">
+
+                    <!-- STEP 01 (POSISI BAWAH) -->
+                    <div class="flex flex-col items-center justify-end pb-[95px]">
+                        <!-- Teks -->
+                        <div class="text-center mb-20 transition-transform duration-300 hover:-translate-y-2">
+                            <span class="inline-block px-5 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-wider mb-4 border border-blue-100 shadow-sm">
+                                STEP - 01
+                            </span>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Hubungi Kami</h3>
+                            <p class="text-slate-500 text-base leading-relaxed max-w-[260px] mx-auto">
+                                Customer service kami siap<br>menunggu diskusi dengan Anda
+                            </p>
+                        </div>
+                        <!-- Dot -->
+                        <div class="w-6 h-6 bg-blue-600 rounded-full ring-8 ring-white shadow-xl z-30 border-4 border-white mb-12"></div>
+                    </div>
+
+                    <!-- STEP 02 (POSISI ATAS) -->
+                    <div class="flex flex-col items-center justify-start pt-[70px]">
+                        <!-- Dot -->
+                        <div class="w-6 h-6 bg-blue-600 rounded-full ring-8 ring-white shadow-xl z-30 border-4 border-white mb-6 mt-10"></div>
+                        <!-- Teks -->
+                        <div class="text-center transition-transform duration-300 hover:translate-y-2">
+                            <span class="inline-block px-5 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-wider mb-4 border border-blue-100 shadow-sm">
+                                STEP - 02
+                            </span>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Registrasi</h3>
+                            <p class="text-slate-500 text-base leading-relaxed max-w-[280px] mx-auto">
+                                Tim kami akan memandu anda<br>dari manual menjadi sistematis
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- STEP 03 (POSISI BAWAH) -->
+                    <div class="flex flex-col items-center justify-end pb-[95px]">
+                        <!-- Teks -->
+                        <div class="text-center mb-20 transition-transform duration-300 hover:-translate-y-2">
+                            <span class="inline-block px-5 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-wider mb-4 border border-blue-100 shadow-sm">
+                                STEP - 03
+                            </span>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Gunakan Aplikasi</h3>
+                            <p class="text-slate-500 text-base leading-relaxed max-w-[260px] mx-auto">
+                                Jadikan Aplikasi Anda yang<br>mengatur segalanya secara otomatis
+                            </p>
+                        </div>
+                        <!-- Dot -->
+                        <div class="w-6 h-6 bg-blue-600 rounded-full ring-8 ring-white shadow-xl z-30 border-4 border-white mb-12"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MOBILE: Layout Vertikal (Default) -->
+            <div class="lg:hidden max-w-md mx-auto pl-4">
+                <div class="space-y-12 relative">
+                    <div class="absolute left-[15px] top-4 bottom-4 w-0.5 border-l-2 border-dashed border-slate-200"></div>
+
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-blue-600 rounded-full ring-4 ring-white shadow-md z-10 flex items-center justify-center text-white text-xs font-bold">1</div>
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-bold mb-2">STEP - 01</span>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">Hubungi Kami</h3>
+                            <p class="text-slate-500 text-sm">Customer service kami siap menunggu diskusi dengan Anda.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-blue-600 rounded-full ring-4 ring-white shadow-md z-10 flex items-center justify-center text-white text-xs font-bold">2</div>
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-bold mb-2">STEP - 02</span>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">Registrasi</h3>
+                            <p class="text-slate-500 text-sm">Tim kami akan memandu migrasi data dari manual menjadi sistematis.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-blue-600 rounded-full ring-4 ring-white shadow-md z-10 flex items-center justify-center text-white text-xs font-bold">3</div>
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-bold mb-2">STEP - 03</span>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">Gunakan Aplikasi</h3>
+                            <p class="text-slate-500 text-sm">Jadikan Aplikasi Anda yang mengatur segalanya secara otomatis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="testimonials" class="slider-1 py-20 bg-gray">
+        <div class="container px-4 sm:px-8">
+            <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">Apa kata mereka tentang ticash</h2>
+
+            <div class="slider-container">
+                <div class="swiper-container card-slider">
+                    <div class="swiper-wrapper">
+
+                        @forelse($testimonials as $testimonial)
+                        <div class="swiper-slide">
+                            <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex flex-col items-center text-center mb-4">
+                                    <div class="testimonial-avatar mb-3">
+                                        @if($testimonial->avatar_path)
+                                        <img class="rounded-full object-cover w-16 h-16" src="{{ Storage::url($testimonial->avatar_path) }}" alt="{{ $testimonial->name }}" />
+                                        @else
+                                        <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center mx-auto">
+                                            <span class="font-medium text-slate-600 text-xl">{{ substr($testimonial->name, 0, 1) }}</span>
+                                        </div>
+                                        @endif
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">{{ $testimonial->name }}</h4>
+                                        <p class="text-slate-600">{{ $testimonial->position }}</p>
+                                        <p class="text-blue-600 font-medium">{{ $testimonial->institution }}</p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="italic text-slate-700 mb-4">"{{ $testimonial->quote }}"</p>
+                                </div>
+                            </div>
+                        </div> @empty
+                        <div class="swiper-slide">
+                            <div class="card bg-white rounded-xl shadow-lg p-6 border border-slate-200">
+                                <div class="flex flex-col items-center text-center mb-4">
+                                    <img class="rounded-full object-cover w-16 h-16 mb-3" src="images/testimonial-1.jpg" alt="alternative" />
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">Contoh Pengguna</h4>
+                                        <p class="text-slate-600">Bendahara</p>
+                                        <p class="text-blue-600 font-medium">Ponpes Al-Amanah</p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="italic text-slate-700 mb-4">"Sistem ticash sangat membantu dalam mengelola keuangan pesantren dengan lebih efisien dan transparan."</p>
+                                </div>
+                            </div>
+                        </div> @endforelse
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Kontak -->
     <div id="form-contact" class="basic-5">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
             <div class="mb-16 lg:mb-0">
@@ -575,7 +712,7 @@
         </div>
     </div>
     <!-- Footer BARU (Menggantikan .footer dan .copyright) -->
-    <div class="footer-new bg-blue-800">
+    <div class="footer-new bg-sky-900">
         <div class="container px-4 sm:px-8">
 
             <hr class="border-slate-700 my-2" />
@@ -584,8 +721,8 @@
 
                 <div class="brand-section">
                     <div class="logo-title mb-4 flex items-center">
-                        <img src="{{ asset('images/logo-ticash-white.png') }}" alt="ticash Logo" class="h-10 mr-3" />
-                        <h5 class="text-white text-2xl font-bold">ticash</h5>
+                        <img src="{{ asset('images/ticash-logo-white.png') }}" alt="ticash Logo" class="h-10 mr-3" />
+                        {{-- <span class="logo-text text-white font-bold text-3xl">ticash</span> --}}
                     </div>
                     <p class="mb-6 max-w-md">
                         Solusi manajemen keuangan digital untuk pesantren. Platform integrasi dan update seumur hidup gratis untuk kemaslahatan umat.
