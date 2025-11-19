@@ -10,6 +10,9 @@ Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
 // Menerima data dari form 'Hubungi Kami'
 Route::post('/kontak', [LandingPageController::class, 'storeContact'])->name('landing.kontak');
 
+// Menerima data dari form permintaan demo dan arahkan ke WhatsApp
+Route::post('/demo', [LandingPageController::class, 'requestDemo'])->name('landing.demo');
+
 // Simple admin access link 
 Route::get('/admin', function() {
     return redirect()->route('admin.login.form');

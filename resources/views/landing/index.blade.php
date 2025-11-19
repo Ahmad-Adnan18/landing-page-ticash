@@ -417,7 +417,7 @@
                         <p class="text-slate-600 text-lg mb-6">Sistem ticash adalah proyek sosial yang didedikasikan sepenuhnya untuk kemaslahatan pesantren di seluruh Indonesia</p>
 
                         <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 mb-8 text-white max-w-2xl mx-auto">
-                            <h3 class="text-xl font-bold mb-2">Nilai Investasi</h3>
+                            <h3 class="text-xl text-white font-bold mb-2">Nilai Investasi</h3>
                             <div class="text-4xl font-bold">Rp 350.000.000</div>
                             <p class="text-blue-100 mt-2">Telah diwakafkan untuk kemaslahatan umat</p>
                         </div>
@@ -676,7 +676,7 @@
                 <h2 class="text-3xl font-bold mb-4 text-slate-800">Tertarik dengan Solusi Kami?</h2>
                 <p class="text-slate-500 mb-8">Isi formulir di bawah untuk mendapatkan demo gratis dan informasi lebih lanjut.</p>
 
-                <form method="POST" action="{{ route('landing.kontak') }}">
+                <form method="POST" action="{{ route('landing.demo') }}">
                     @csrf
                     <div class="form-group">
                         <input type="text" id="name" name="name" class="form-control-input" required>
